@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GTA 3D — Спортивная Машина</title>
+<style>
+  /* Стили для красивого отображения HUD */
+  html, body { height: 100%; margin: 0; overflow: hidden; background: #000; font-family: 'Arial', sans-serif; }
+  canvas { display: block; }
+  #hud { position: fixed; left: 15px; top: 15px; padding: 10px 15px; background: rgba(0, 0, 0, 0.6); color: #fff; border-radius: 10px; z-index: 50; }
+  .hud-row { margin: 8px 0; font-weight: bold; }
+  #instructions { position: fixed; left: 50%; transform: translateX(-50%); bottom: 20px; background: rgba(0, 0, 0, 0.6); padding: 8px 15px; border-radius: 8px; color: #fff; z-index: 50; font-size: 14px; }
+  .green { color: #8f8; }
+  .red { color: #f88; }
+</style>
+</head>
+<body>
+<div id="hud">
+  <div class="hud-row">Здоровье: <span id="hp" class="green">100</span> | Оружие: <span id="weapon">Пистолет</span></div>
+  <div class="hud-row">Деньги: $<span id="money">0</span> | Розыск: <span id="wanted">0</span></div>
+  <div class="hud-row">Время: <span id="timeText">День</span></div>
+</div>
+<div id="instructions">
+  Кликните для начала. WASD — движение, Мышь — обзор, ЛКМ — огонь, E — сесть/выйти из машины.
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+<script src="main.js"></script>
+</body>
+                                </html>
+                                
